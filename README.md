@@ -24,6 +24,7 @@ The goals for this challenge are:
   3. Complete the demographic information panel.
 
 ## Challenge Submission
-Please check file "plots.js" and "index.html" in the repository for code
+Please check file "plots.js" and "index.html" in the repository for code.
+Also, please click on the link https://jusnguyen03.github.io/plotly_deploy/ for the deployed page.
 
 ![]()
