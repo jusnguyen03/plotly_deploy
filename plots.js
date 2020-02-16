@@ -29,12 +29,12 @@ function buildMetadata(sample) {
   
         PANEL.html("");
         PANEL.append("h6").text('ID: '+result.id);
-        PANEL.append("h6").text('Ethnicity: '+result.ethnicity);
-        PANEL.append("h6").text('Gender: '+result.gender);
-        PANEL.append("h6").text('Age: ' +result.age);
-        PANEL.append("h6").text('Location: ' + result.location);
-        PANEL.append("h6").text('BBtype: '+result.bbtype);
-        PANEL.append("h6").text('wfreq: '+result.wfreq);
+        PANEL.append("h6").text('ETHNICITY: '+result.ethnicity);
+        PANEL.append("h6").text('GENDER: '+result.gender);
+        PANEL.append("h6").text('AGE: ' +result.age);
+        PANEL.append("h6").text('LOCATION: ' + result.location);
+        PANEL.append("h6").text('BBTYPE: '+result.bbtype);
+        PANEL.append("h6").text('WFREQ: '+result.wfreq);
     });
 }
 
@@ -63,6 +63,7 @@ function buildCharts(sample){
         
         var data = [trace];
         var layout = {
+            title: "Top 10 Bacteria Cultures Found",
             margin: {t:50, l:150}
         };
         Plotly.newPlot("bar", data, layout);
@@ -82,7 +83,7 @@ function buildCharts(sample){
           
         var data = [trace1];  
         var layout = {
-            title: '',
+            title: "Bacteria Cultures Per Sample",
             xaxis: {title: "OTU ID"},
             showlegend: false,
             height: 600,
